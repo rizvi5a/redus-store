@@ -77,7 +77,7 @@ export const reducer = (state = initialState, action) => {
       };
 
     case UPDATE_CATEGORIES:
-      return {git 
+      return {
         ...state,
         categories: [...action.categories],
       };
@@ -92,4 +92,4 @@ export const reducer = (state = initialState, action) => {
       return state;
   }
 };
-export default reducers;
+export default reducer;

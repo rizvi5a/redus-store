@@ -37,7 +37,7 @@ export function idbPromise(storeName, method, object) {
         case 'get':
           const all = store.getAll();
           all.onsuccess = function() {
-            resolve(all.result);
+           return  resolve(all.result);
           };
           break;
         case 'delete':
